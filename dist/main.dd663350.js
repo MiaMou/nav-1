@@ -173,17 +173,14 @@ $('.addButton').on('click', function () {
 window.onbeforeunload = function () {
   var string = JSON.stringify(hashMap);
   localStorage.setItem('x', string);
-};
-
-$(document).on('keypress', function (e) {
-  // const key = e.key;
-  var key = e.key;
-
-  for (var i = 0; i < hashMap.length; i++) {
-    if (hashMap[i].logo.toLowerCase() === key) {
-      window.open(hashMap[i].url);
-    }
-  }
-});
+}; // $(document).on('keypress', (e)=>{
+//     // const key = e.key;
+//     const {key} = e
+//     for(let i=0; i<hashMap.length; i++){
+//         if(hashMap[i].logo.toLowerCase() === key){
+//             window.open(hashMap[i].url)
+//         }
+//     }
+// })
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.f9467441.js.map
+//# sourceMappingURL=main.dd663350.js.map
